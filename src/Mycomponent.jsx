@@ -1,10 +1,11 @@
 function Login(props) {
-    const start = "로그인";
-    const name = start.onclick;
+  const handleClick = 'onClick'
     const divStyle = {
     display: 'flex',
     alignItems: 'center',
   };
+
+  //. css나 style-component 파일을 만들어서 스타일링하기, 이미지 파일 변경하기, props사용하기
     return (
         <header style={divStyle}>
           <img style={{lineHeight: "normal", marginRight: "250px"}} src="file:///C:/Users/lsg05/Downloads/%E1%84%80%E1%85%A1%E1%84%85%E1%85%A9%E1%84%92%E1%85%A7%E1%86%BC%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9%20(2).svg" alt="투자가 머니" />
@@ -31,7 +32,8 @@ function Login(props) {
           }}>
         교과서
       </p>
-      <div src="file:///C:/Users/lsg05/Downloads/magnify%20(1).svg">
+
+      <div img="file:///C:/Users/lsg05/Downloads/magnify%20(1).svg">
       <input type="text" name="message" placeholder="search..."
       style={{
           borderRadius: "20px",
@@ -42,8 +44,9 @@ function Login(props) {
           marginRight: "50px",
           }} />
         </div>
-        <button>
-          {start}
+
+        <button onClick={handleClick}>
+          로그인
         </button>
         </header>
     )
